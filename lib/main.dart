@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn2/screen/addform.dart';
 import 'package:learn2/screen/item.dart';
 
 void main() {
@@ -10,16 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My title',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("POYOYOYO"),
-          backgroundColor: Colors.red,
-          centerTitle: true,
-        ),
-        body: const Item(),
-      ),
-    );
+    return const AddForm();
   }
 }
