@@ -74,6 +74,14 @@ class _MyWidgetState extends State<AddForm> {
                   FilledButton(
                       onPressed: () {
                         _formKey.currentState!.validate();
+                        _formKey.currentState!.save();
+                        data.add(Pilot(
+                            name: _name,
+                            age: _age,
+                            job: 'Pilot',
+                            series: _series,
+                            img: ''));
+                        _formKey.currentState!.reset();
                       },
                       child: const Text(
                         'Submit',
